@@ -1,8 +1,7 @@
 ﻿string[] ArrayOne = new string[4] {"Hello","2","world",":)-"}; // созадли исходный массив
 string[] ArrayTwo = new string[ArrayOne.Length]; // создали масив для вывода с длиной первого массива
-int count = 0; // создали переменную для записи
 
-void CopuCut(string[] ArrayOne, string[] ArrayTwo)
+void CopyCut(string[] ArrayOne, string[] ArrayTwo)
 {
     int count= 0;
     for (int i = 0; i < ArrayOne.Length; i++) // проходим по 1 массиву
@@ -15,10 +14,15 @@ void CopuCut(string[] ArrayOne, string[] ArrayTwo)
     }
 }
 
-void Print(string[] Array)
+void PrintArray(string[] Array)
 {
-    for (int i = 0; i < array.length; i++)
+    for (int i = 0; i < Array.Length; i++)
     {
-        Console.Write($"{Array[i]} ");
+        Console.Write($"{Array[i]} "); // Выводим массив через фукнцию PrintArray
     }
+    Console.WriteLine();
 }
+CopyCut(ArrayOne,ArrayTwo);
+PrintArray(ArrayOne);
+PrintArray(ArrayTwo);
+
